@@ -1,8 +1,9 @@
 # Frontend Mentor - QR code component
 
                                                 |
+|  #  | Project                                                                                                    | Live Demo                                                   |
 | :-: | ---------------------------------------------------------------------------------------------------------- | -----------------------------------------------
-| 01  |       [QR code component]     | [Live Demo]  |
+| 01  |       QR code component      | [Live Demo]()  |
 
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
