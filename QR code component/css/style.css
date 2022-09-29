@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7,7 +6,6 @@
     padding: 0;
     margin: 0;
 }
-
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-gray: hsl(212, 45%, 89%);
@@ -25,7 +23,6 @@ body {
     align-items: center;
     font-size: 15px;
 }
-
 .qr-code {
     display: flex;
     flex-direction: column;
@@ -36,18 +33,13 @@ body {
     background-color: var(--White);
     border-radius: var(--bor-rad);
 }
-
-
-
 .img {
     max-width: 100%;
 }
-
 .img img {
     width: 355px;
     border-radius: var(--bor-rad);
 }
-
 .content  {
     padding: 30px;
     text-align: center;
@@ -57,7 +49,6 @@ body {
     color: var(--Dark-blue);
     margin-bottom: 10px;
 }
-
 .content p {
     font-weight: 400;
     color: var(--Grayish-blue);
