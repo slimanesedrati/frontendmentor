@@ -3,5 +3,5 @@
 
 |  #  | Project                                                                                                    | Live Demo                                                   |
 | :-: | ---------------------------------------------------------------------------------------------------------- | -----------------------------------------------
-| 01  |       [QR code component](https://github.com/slimanesedrati/JavaScript-Projects/tree/main/To%20Do%20Application%20(With%20Local%20Storage))       | [Live Demo](https://slimanesedrati.github.io/JavaScript-Projects/To%20Do%20Application%20(With%20Local%20Storage)/index.html)  |
+| 01  |       [QR code component](https://github.com/slimanesedrati/frontendmentor/tree/main/QR%20code%20component)       | [Live Demo](https://slimanesedrati.github.io/frontendmentor//QR%20code%20component/index.html)  |
 
