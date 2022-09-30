@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7,7 +6,6 @@
     padding: 0;
     margin: 0;
 }
-
 :root {
     --White: hsl(0, 0%, 100%);
     --Light-gray: hsl(212, 45%, 89%);
@@ -15,7 +13,6 @@
     --Dark-blue: hsl(218, 44%, 22%);
     --bor-rad : 20px;
 }
-
 body {
     font-family: "Outfit", sans-serif, Arial;
     height: 100vh;
@@ -47,8 +44,8 @@ body {
     color: var(--Dark-blue);
 }
 .container p {
-    font-size: 0.9rem;
-    padding: 10px 15px;
+    font-size: 0.85rem;
+    padding: 10px 1px;
     color: var(--Grayish-blue);
     font-weight: 400;
 }
