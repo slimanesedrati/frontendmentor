@@ -27,29 +27,28 @@ body {
 }
 .container {
     background-color: var(--White);
-    width: 320px;
+    width: 280px;
     padding: 15px;
     border-radius: var(--bor-rad);
     text-align: center;
 }
 .qr-code-img {
     max-width: 100%;
+}
+.qr-code-img img {
     border-radius: var(--bor-rad);
-    overflow: hidden;
+    width: 250px;
 }
 .container h1 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-top: 15px;
     font-weight: 700;
     line-height: 1.5;
     color: var(--Dark-blue);
 }
 .container p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 10px 15px;
     color: var(--Grayish-blue);
     font-weight: 400;
 }
-
-
-
