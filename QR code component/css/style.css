@@ -45,7 +45,7 @@ body {
 }
 .container p {
     font-size: 0.85rem;
-    padding: 10px 1px;
+    padding: 10px 5px;
     color: var(--Grayish-blue);
     font-weight: 400;
 }
