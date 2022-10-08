@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
+    --pd : 0.9rem;
+    --br: 20px;
+    --tr: 0.3s;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-size: 1.1rem;
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--Almost-White);
+    color: var(--Medium-Gray);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.container {
+    padding: 0 var(--pd);
+    margin: 0 auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+.container .logo {
+    padding-top: 8px;
+    cursor: pointer;
+}
+.container nav {
+    padding: var(--pd);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container nav .nav-bar {
+    display: flex;
+    flex-grow: 0.7;
+}
+.container nav .nav-bar > li {
+    cursor: pointer;
+    padding: var(--pd);
+}
+.features,
+.company {
+    position: relative;
+    margin-right: 15px;
+}
+.features::after,
+.company::after {
+    content: url(images/icon-arrow-down.svg);
+    position: absolute;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.features ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: -500%;
+    right: 0;
+    width: 180px;
+    height: 200px;
+    border-radius: var(--br);
+    background-color: var(--Almost-White);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: top var(--tr);
+}
+.features ul.open{
+    top: 100%;
+}
+
+.features ul .features-item {
+    padding: 8px 2rem;
+    align-self: flex-start;
+    cursor: pointer;
+}
+.features ul .features-item img {
+    padding-right: 5px;
+}
+.company ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: -500%;
+    position: absolute;
+    left: 0.9rem;
+    width: 130px;
+    height: 150px;
+    border-radius: var(--br);
+    background-color: var(--Almost-White);
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: top var(--tr);
+}
+.company ul.open {
+    top: 100%;
+}
+.company ul .company-item {
+    padding: 0.5rem 1.3rem ;
+    cursor: pointer;
+}
+
+.login-register {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.1;
+}
+.login-register .login-btn,
+.login-register .register-btn {
+    cursor: pointer;
+    font-size: inherit;
+    color: inherit;
+    font-weight: inherit;
+}
+.login-register .login-btn {
+    padding: var(--pd) 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.login-register .register-btn {
+    padding: var(--pd) 30px;
+    border-radius: var(--br);
+    border: 2px solid var(--Medium-Gray);
+    outline: none;
+    background-color: transparent;
+}
+
+.togel-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 15;
+}
+
+.togel-menu .icon-close-menu {
+    display: none;
+}
+
+.togel-menu.active .icon-menu {
+    display: none;
+}
+.togel-menu.active .icon-close-menu {
+    display: block;
+}
+
+@media (max-width:767px) {
+    body {
+        position: relative;
+    }
+    .container nav .nav-bar {
+        position: absolute;
+        flex-direction: column;
+        padding: 80px 0 0 10px;
+        top: 0;
+        width: 250px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 100vh;
+        z-index: 10;
+        right: -100%;
+        transition: right var(--tr);
+    }
+    .features ul {
+        box-shadow: none;
+        bottom: 0;
+        width: 150px;
+        height: 100px;
+    }
+    .features ul.open{
+        bottom: 0;
+    }
+    
+    .features ul .features-item {
+        padding: 5px;
+    }
+    .company ul {
+        display: none;
+    }
+    .login-register {
+        z-index: 11;
+        position: absolute;
+        top: 40vh;
+        flex-direction: column;
+        width: 250px;
+        padding: 20px;
+        right: -100%;
+        transition: right var(--tr);
+    }
+    .login-register.show {
+        right: 0;
+
+    }
+    .togel-menu {
+        display: block;
+    }
+    nav .nav-bar.show {
+        right: 0;
+    }
+} 

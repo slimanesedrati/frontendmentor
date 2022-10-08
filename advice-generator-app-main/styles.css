@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    --pr: 0.8rem;
+    --pd: 0.5rem ;
+}
+
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.75rem;
+    background-color: var(--Dark-Blue);
+    font-weight: 800;
+}
+
+.container {
+    padding: 0 15px;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--Dark-Grayish-Blue);
+    max-width: 34.5rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 3.5rem 1.5rem;
+    border-radius: var(--pr);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card .advice-number {
+    font-size: 1rem;
+    color: var(--Neon-Green);
+    padding-bottom: var(--pd);
+}
+
+.advice-number span {
+    padding-left: 0.5rem;
+}
+
+.card .advice-text {
+    color: var(--Light-Cyan);
+    text-align: center;
+    padding-bottom: var(--pd);
+}
+
+.divider-img {
+    padding-bottom: var(--pd);
+}
+
+.divider-img img {
+    max-width: 100%;
+}
+
+#dice {
+    position: absolute;
+    bottom: -2.34rem;
+    background-color: var(--Neon-Green);
+    border-radius: 50%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition:box-shadow 0.5s;
+}
+
+#dice:hover {
+    box-shadow: 0 0 2.5rem var(--Neon-Green);
+}
+
+#dice img {
+    width: 1.5rem;
+}
