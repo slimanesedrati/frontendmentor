@@ -49,10 +49,12 @@ body {
     position: relative;
 }
 
-.card .advice-number {
-    font-size: 1rem;
+
+
+.advice-number h1 {
     color: var(--Neon-Green);
     padding-bottom: var(--pd);
+    font-size: 1rem;
 }
 
 .advice-number span {
