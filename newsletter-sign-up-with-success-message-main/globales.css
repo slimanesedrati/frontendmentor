@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.flex-center {
+    @apply flex justify-center items-center;
+}
+
+.btn {
+    @apply p-4 rounded-md mt-6 bg-dark_slate_grey text-white  focus:outline-none
+}
+
+.head_text {
+    @apply font-bold text-5xl md:text-6xl
+}
+
+.list_item {
+    @apply flex items-center space-x-4
+}
